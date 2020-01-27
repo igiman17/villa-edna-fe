@@ -24,4 +24,7 @@ export class ReservationComponent implements OnInit {
     console.log(id);
   }
 
+  
+  
+
 }
