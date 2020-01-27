@@ -8,7 +8,7 @@
           </mat-card-header>
         <mat-card-content>
             <div>
-                <mat-radio-group aria-label="Select an option">
+                <mat-radio-group aria-label="Select a Package">
                     <ng-template ngFor let-package [ngForOf]="packages">
                         <mat-radio-button (click)="selectPackageType(package.id)" [value]="package.id">{{package.name | uppercase}}</mat-radio-button>
                     </ng-template>
