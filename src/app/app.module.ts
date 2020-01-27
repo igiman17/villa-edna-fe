@@ -13,14 +13,16 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select'; 
 import {MatInputModule} from '@angular/material/input'; 
 import {MatCardModule, MatCard} from '@angular/material/card'; 
-import {MatRadioModule} from '@angular/material/radio'; 
+import {MatRadioModule} from '@angular/material/radio';
+import { HomeComponent } from './home/home.component'; 
 
 
 @NgModule({
   declarations: [
     AppComponent,
     RoomsComponent,
-    ReservationComponent
+    ReservationComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
