@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PackageService } from '../package.service';
 
 @Component({
   selector: 'app-reservation',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReservationComponent implements OnInit {
 
-  constructor() { }
+  packages = [];
 
-  ngOnInit() {
+  constructor( private packageService: PackageService) { }
+
+  async ngOnInit() {
+    this.packageService.getPackages().subscribe((data: any[]) => {
+      this.packages = data;
+      console.log(this.packages);
+    });
+    
+  }
+
+  selectPackageType($event, id) {
+    console.log(id);
+    console.log($event);
+
   }
 
 }
