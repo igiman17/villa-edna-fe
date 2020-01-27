@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "name": "regular",
+        "description": " ",
+        "prices": [
+            {
+                "name": "overnight",
+                "price": 9500.00
+            },
+            {
+                "name": "daytime",
+                "price": 7500.00
+            },
+            {
+                "name": "wholeday",
+                "price": 16000.00
+            }
+        ]
+    },
+
+    {
+        "id": 2,
+        "name": "function hall",
+        "description": " ",
+        "prices": [
+            {
+                "name": "am slot",
+                "price": 13000.00
+            },
+            {
+                "name": "pm slot",
+                "price": 15000.00
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "all-in promo",
+        "description": " ",
+        "prices": [
+            {
+                "name": "am slot",
+                "price": 23000.00
+            },
+            {
+                "name": "pm slot",
+                "price": 28000.00
+            }
+        ]
+    }
+
+]
