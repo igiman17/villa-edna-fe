@@ -1,1 +1,22 @@
-<p>reservation works!</p>
+<div class="contaent">
+    <header class="header column">
+        <h1>Reservation</h1>
+    </header>
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Select a Package</mat-card-title>
+          </mat-card-header>
+        <mat-card-content>
+            <div>
+                <mat-radio-group aria-label="Select an option">
+                    <ng-template ngFor let-package [ngForOf]="packages">
+                        <mat-radio-button (click)="selectPackageType(package.id)" [value]="package.id">{{package.name | uppercase}}</mat-radio-button>
+                    </ng-template>
+                  
+                </mat-radio-group>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
+
+  
