@@ -20,10 +20,8 @@ export class ReservationComponent implements OnInit {
     
   }
 
-  selectPackageType($event, id) {
+  selectPackageType(id) {
     console.log(id);
-    console.log($event);
-
   }
 
 }
